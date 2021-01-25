@@ -1,0 +1,360 @@
+/*HTML tags styling*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 350;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  padding: 2.5% 0;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 300;
+  font-size: 0.9em;
+  transition: all 0.5s;
+  padding: 0.2em;
+}
+
+li a:hover {
+  font-weight: 800;
+  color: #15244b;
+  cursor: context-menu;
+  border: 2px solid #15244b;
+  border-style: dashed;
+  border-bottom: 2px solid #15244b;
+}
+
+h1 {
+  font-size: 240%;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+h2 {
+  font-size: 150%;
+  word-spacing: 2px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+  color: #15244b;
+  font-weight: 700;
+  border: 1px rgba(0, 0, 0, 0.9);
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../resources/img/bio.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+p {
+  font-size: 1em;
+  line-height: 170%;
+}
+
+#cici {
+  margin-left: 25%;
+  width: 30vw;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+/*SM*/
+
+.no-display {
+  display: none;
+}
+
+/*NavBar*/
+
+.navbar {
+  overflow: hidden;
+  background-color: whitesmoke;
+  height: 65px;
+  clear: both;
+  z-index: 100;
+  padding: 0 10%;
+  padding-left: 40%;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 5px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #22253a;
+  text-align: center;
+  padding: 24px 16px;
+  text-decoration: none;
+  height: 65px;
+}
+
+.navbar a:hover {
+  background-color: #30344e;
+  color: #fff !important;
+}
+
+.active {
+  background-color: #15244b;
+  color: #fff !important;
+}
+
+.navbar i {
+  position: absolute;
+  color: #15244b;
+  left: 0;
+  top: 20%;
+  float: left;
+  font-size: 2em;
+  margin: 0 8%;
+}
+
+.navbar i span {
+  padding: 0 5%;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 0.6em;
+}
+
+.titleheader {
+  padding: 1% 5%;
+  color: white;
+  background-image: linear-gradient( rgba(100, 10, 39, 0.7), rgba(15, 15, 39, 0.9)), url('https://picsum.photos/2048/1365/?random');
+  width: 100%;
+  height: 25vh;
+  background-size: cover;
+}
+
+.hero-text {
+  position: absolute;
+  width: 1140px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text p {
+  width: 45%;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 6px 0px 10px 0px;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 4px;
+}
+
+.btn-full {
+  background-color: #15244b;
+  border: 1px solid #15244b;
+}
+
+.btn-empty {
+  border: 1px solid #15244b;
+  color: #15244b;
+}
+
+.btn-empty:hover {
+  border: 1px solid #22253a;
+  color: white;
+  background: #22253a;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px;
+}
+
+.btn-full:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px;
+}
+
+.box {
+  padding: 0.5%;
+}
+
+#back-drop-authors {
+  padding-top: 1%;
+  background-image: linear-gradient( rgba(100, 10, 39, 0.8), rgba(15, 15, 39, 0.9)), url("https://picsum.photos/2048/1365/?random");
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+}
+
+.select-authors {
+  background-color: #15244b;
+  border: 1px solid #394052;
+  padding: 1%;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 4px;
+}
+
+.select-authors:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px;
+}
+
+.tname {
+  color: #15244b;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+#section-authors {
+  height: auto;
+}
+
+.author-photo {
+  width: 100%;
+}
+
+.author-photo img {
+  width: inherit;
+  height: auto;
+}
+
+#section-authors .heading {
+  color: white;
+}
+
+#back-drop-authors .card {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px 20px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 5px;
+}
+
+#section-blog div .card {
+  padding: 3em;
+}
+
+.mainview {
+  margin-top: 8%;
+}
+
+.titleheader {
+  position: relative;
+  clear: both;
+  background-color: #0f0f27;
+}
+
+.titleheader h2 {
+  margin: 3%;
+}
+
+textarea {
+  width: 100%;
+  padding: 1em 1em;
+  border-radius: 0.25em;
+  box-shadow: none;
+  border: none;
+  margin-top: 10px !important;
+  height: 5em;
+}
+
+.aboutus p {
+  text-align: center;
+  padding: 5%;
+}
+
+.heading {
+  position: relative;
+  padding-bottom: 10px;
+  text-indent: 15px;
+  right: 15px;
+  text-align: left;
+}
+
+.heading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-right: 5px solid #22253a;
+  background-color: #15244b;
+  bottom: 0;
+  left: 15px;
+  width: 60px;
+  height: 3px;
+  z-index: 10;
+}
+
+.main-container {
+  margin-top: 20px;
+}
+
+#geoImg {
+  margin: 0px 0px 0px 0px;
+  border: #000 hidden 2px;
+}
+
+.btn-geo {
+  background-color: #7f8c8d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 3px;
+  cursor: pointer;
+  margin: 1px;
+}
+
+.btn-geo:link {
+  text-decoration: none;
+}
+
+.btn-geo:visited {
+  text-decoration: none;
+}
+
+.btn-geo:hover {
+  text-decoration: underline;
+}
+
+.btn-geo:active {
+  text-decoration: underline;
+}
+
+#link-geo {
+  margin-left: 225px;
+}
